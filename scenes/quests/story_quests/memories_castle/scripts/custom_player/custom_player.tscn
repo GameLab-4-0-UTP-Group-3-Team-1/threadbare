@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwy4wn0j3swaf"]
+
+[ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="1_5bbfg"]
+[ext_resource type="Script" uid="uid://qndberw5vedc" path="res://scenes/quests/story_quests/memories_castle/scripts/custom_player/custom_player.gd" id="2_q2bf4"]
+
+[node name="Player" instance=ExtResource("1_5bbfg")]
+script = ExtResource("2_q2bf4")
+duration_animation_sword = 0.3
+start_live = 100.0
+sword_offset = Vector2(32, 0)
