@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://1td1605qy7lg"]
+[gd_scene load_steps=2 format=3 uid="uid://b0vyvxapry7p0"]
 
 [ext_resource type="PackedScene" uid="uid://b805oktcsjrkk" path="res://scenes/eternal_loom_sokoban/levels/eternal_loom_template.tscn" id="1_kkt1h"]
 

@@ -366,7 +366,7 @@ visible = false
 script = ExtResource("4_lv6nq")
 dialogue = ExtResource("23_6by3i")
 animation_player = NodePath("../OnTheGround/AnimationPlayer")
-next_scene = "uid://coi4lvxir542y"
+next_scene = "uid://bu8e5ganibn37"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="fray_idle" parent="." instance=ExtResource("3_om4hb")]
