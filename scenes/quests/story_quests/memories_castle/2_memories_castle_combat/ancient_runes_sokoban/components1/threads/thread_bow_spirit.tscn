@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyslfdqg1hq6f"]
+
+[ext_resource type="Script" uid="uid://cgwu1infdhqxt" path="res://scenes/eternal_loom_sokoban/components/system/board/piece_2d.gd" id="1_aqtym"]
+[ext_resource type="Texture2D" uid="uid://bs078o6k3ecp8" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/memories_castle_combat_components/sokoban/runes_small.png" id="2_h0ffb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1v74e"]
+atlas = ExtResource("2_h0ffb")
+region = Rect2(40, 287, 1088, 64)
+
+[node name="SokobanBowSpirit" type="Node2D"]
+z_index = 2
+script = ExtResource("1_aqtym")
+id = &"spirit"
+tags = Array[StringName]([&"pushable"])
+metadata/_custom_type_script = "uid://cgwu1infdhqxt"
+
+[node name="Thread" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = SubResource("AtlasTexture_1v74e")
+hframes = 17
+frame = 16

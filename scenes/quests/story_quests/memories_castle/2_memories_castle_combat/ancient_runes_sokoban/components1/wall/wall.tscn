@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0fawtkjbh4fw"]
+
+[ext_resource type="Script" uid="uid://cgwu1infdhqxt" path="res://scenes/eternal_loom_sokoban/components/system/board/piece_2d.gd" id="1_2hyon"]
+[ext_resource type="Texture2D" uid="uid://c3v5vsga1sxfj" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/memories_castle_combat_components/sokoban/tilesets/walls.tres" id="2_gl00w"]
+
+[node name="SokobanWall" type="Node2D"]
+z_index = 2
+script = ExtResource("1_2hyon")
+id = &"wall"
+metadata/_custom_type_script = "uid://cgwu1infdhqxt"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("2_gl00w")
+hframes = 10
+vframes = 2

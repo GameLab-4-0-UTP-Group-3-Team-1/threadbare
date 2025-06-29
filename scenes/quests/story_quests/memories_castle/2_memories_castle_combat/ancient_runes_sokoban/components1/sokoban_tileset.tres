@@ -1,0 +1,32 @@
+[gd_resource type="TileSet" load_steps=9 format=3 uid="uid://c10fu6pvkepqi"]
+
+[ext_resource type="PackedScene" uid="uid://bqficjeoajbvw" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/ancient_runes_sokoban/components1/clump/clump.tscn" id="1_6od0w"]
+[ext_resource type="PackedScene" uid="uid://dw0hlwrjm1emd" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/ancient_runes_sokoban/components1/clump/clump_target.tscn" id="2_ru6ag"]
+[ext_resource type="PackedScene" uid="uid://c0fawtkjbh4fw" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/ancient_runes_sokoban/components1/wall/wall.tscn" id="3_4bnqh"]
+[ext_resource type="PackedScene" uid="uid://bnp5wl4e0p3uw" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/ancient_runes_sokoban/components1/wall/wall_2.tscn" id="4_alqis"]
+[ext_resource type="PackedScene" uid="uid://bcheccw15n42j" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/ancient_runes_sokoban/components1/player/sokoban_player.tscn" id="5_1twfx"]
+[ext_resource type="Texture2D" uid="uid://bkbyvwb4tmgj4" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/ancient_runes_sokoban/components1/floor/floor.png" id="6_pgqto"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_ef8tg"]
+resource_name = "pieces"
+scenes/2/scene = ExtResource("1_6od0w")
+scenes/3/scene = ExtResource("2_ru6ag")
+scenes/4/scene = ExtResource("3_4bnqh")
+scenes/5/scene = ExtResource("4_alqis")
+scenes/6/scene = ExtResource("5_1twfx")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cpxc1"]
+texture = ExtResource("6_pgqto")
+texture_region_size = Vector2i(64, 64)
+0:0/next_alternative_id = 2
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[resource]
+tile_size = Vector2i(64, 64)
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Terrain 0"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
+sources/0 = SubResource("TileSetScenesCollectionSource_ef8tg")
+sources/2 = SubResource("TileSetAtlasSource_cpxc1")
