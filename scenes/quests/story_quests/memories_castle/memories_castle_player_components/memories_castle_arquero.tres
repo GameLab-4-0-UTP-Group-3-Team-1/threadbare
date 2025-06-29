@@ -2,22 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://cfp7ic2va8oq5" path="res://scenes/quests/story_quests/memories_castle/memories_castle_player_components/Arquero.png" id="1_pvl6o"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jn6o5"]
-atlas = ExtResource("1_pvl6o")
-region = Rect2(384, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w5wmm"]
-atlas = ExtResource("1_pvl6o")
-region = Rect2(576, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cpm7y"]
-atlas = ExtResource("1_pvl6o")
-region = Rect2(768, 384, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_iva8t"]
-atlas = ExtResource("1_pvl6o")
-region = Rect2(0, 576, 192, 192)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_jnf28"]
 atlas = ExtResource("1_pvl6o")
 region = Rect2(192, 576, 192, 192)
@@ -37,6 +21,22 @@ region = Rect2(768, 576, 192, 192)
 [sub_resource type="AtlasTexture" id="AtlasTexture_st5lf"]
 atlas = ExtResource("1_pvl6o")
 region = Rect2(0, 768, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jn6o5"]
+atlas = ExtResource("1_pvl6o")
+region = Rect2(384, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w5wmm"]
+atlas = ExtResource("1_pvl6o")
+region = Rect2(576, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cpm7y"]
+atlas = ExtResource("1_pvl6o")
+region = Rect2(768, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iva8t"]
+atlas = ExtResource("1_pvl6o")
+region = Rect2(0, 576, 192, 192)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7uvii"]
 atlas = ExtResource("1_pvl6o")
@@ -114,18 +114,6 @@ region = Rect2(192, 384, 192, 192)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jn6o5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_w5wmm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cpm7y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_iva8t")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_jnf28")
 }, {
 "duration": 1.0,
@@ -141,8 +129,25 @@ animations = [{
 "texture": SubResource("AtlasTexture_st5lf")
 }],
 "loop": true,
-"name": &"attack_01",
+"name": &"attack",
 "speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jn6o5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w5wmm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cpm7y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iva8t")
+}],
+"loop": true,
+"name": &"attack anticipation",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
