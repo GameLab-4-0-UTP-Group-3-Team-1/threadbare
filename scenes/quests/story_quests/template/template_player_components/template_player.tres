@@ -1,11 +1,11 @@
 [gd_resource type="SpriteFrames" load_steps=37 format=3 uid="uid://vwf8e1v8brdp"]
 
-[ext_resource type="Texture2D" uid="uid://1g71i5dhjxbu" path="res://assets/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Attack1.png" id="1_cu6lk"]
-[ext_resource type="Texture2D" uid="uid://c7timn7isyjsm" path="res://assets/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Attack2.png" id="2_icahe"]
+[ext_resource type="Texture2D" uid="uid://1g71i5dhjxbu" path="res://assets/memories_castle/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Attack1.png" id="1_cu6lk"]
+[ext_resource type="Texture2D" uid="uid://c7timn7isyjsm" path="res://assets/memories_castle/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Attack2.png" id="2_icahe"]
 [ext_resource type="Texture2D" uid="uid://dly3ikrx05f0x" path="res://scenes/quests/story_quests/template/template_player_components/template_player_defeated.png" id="2_qxir4"]
-[ext_resource type="Texture2D" uid="uid://xb8v67mfqcgf" path="res://assets/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Guard.png" id="4_gjf71"]
-[ext_resource type="Texture2D" uid="uid://cqcoh4bvuy3v2" path="res://assets/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Idle.png" id="5_eyp3i"]
-[ext_resource type="Texture2D" uid="uid://cbip4wh207udy" path="res://assets/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Run.png" id="6_nw7ra"]
+[ext_resource type="Texture2D" uid="uid://xb8v67mfqcgf" path="res://assets/memories_castle/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Guard.png" id="4_gjf71"]
+[ext_resource type="Texture2D" uid="uid://cqcoh4bvuy3v2" path="res://assets/memories_castle/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Idle.png" id="5_eyp3i"]
+[ext_resource type="Texture2D" uid="uid://cbip4wh207udy" path="res://assets/memories_castle/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Run.png" id="6_nw7ra"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3yb8r"]
 atlas = ExtResource("1_cu6lk")
