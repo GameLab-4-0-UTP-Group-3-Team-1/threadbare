@@ -1,6 +1,6 @@
 [gd_resource type="SpriteFrames" load_steps=26 format=3 uid="uid://b5jjvnmf4bjsa"]
 
-[ext_resource type="Texture2D" uid="uid://d371thplf3g6b" path="res://scenes/quests/story_quests/memories_castle/memories_castle_player_components/BANDIDO.png" id="1_2rwy5"]
+[ext_resource type="Texture2D" uid="uid://d371thplf3g6b" path="res://scenes/quests/story_quests/memories_castle/memories_castle_components/Player/BANDIDO.png" id="1_2rwy5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_31u0c"]
 atlas = ExtResource("1_2rwy5")

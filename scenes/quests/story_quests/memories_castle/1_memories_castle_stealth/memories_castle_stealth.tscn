@@ -1,10 +1,10 @@
-[gd_scene load_steps=26 format=4 uid="uid://bu8e5ganibn37"]
+[gd_scene load_steps=27 format=4 uid="uid://bu8e5ganibn37"]
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_w4n6d"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_043td"]
 [ext_resource type="PackedScene" uid="uid://q0rbdvlg3ei7" path="res://scenes/quests/story_quests/memories_castle/0_memories_castle_intro/memories_castle_intro_components/decorations/trees/forest_trees.tscn" id="2_il21j"]
 [ext_resource type="PackedScene" uid="uid://dwy4wn0j3swaf" path="res://scenes/quests/story_quests/memories_castle/scripts/custom_player/custom_player.tscn" id="3_fh2fd"]
-[ext_resource type="TileSet" uid="uid://b1gasslxqmvfa" path="res://scenes/quests/story_quests/memories_castle/memories_castle_tiles/memories_castle_tiles.tres" id="3_xvhmv"]
+[ext_resource type="TileSet" uid="uid://b1gasslxqmvfa" path="res://scenes/quests/story_quests/memories_castle/memories_castle_components/Tiles/memories_castle_tiles.tres" id="3_xvhmv"]
 [ext_resource type="PackedScene" uid="uid://d37mebu7atru7" path="res://scenes/game_elements/characters/enemies/guard/guard.tscn" id="4_o217b"]
 [ext_resource type="PackedScene" uid="uid://bcsqrcs37ykyx" path="res://scenes/quests/story_quests/memories_castle/0_memories_castle_intro/memories_castle_intro_components/decorations/trees/tree_high.tscn" id="4_xvhmv"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="5_d0ely"]
@@ -15,11 +15,12 @@
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="8_eanln"]
 [ext_resource type="Script" uid="uid://dctaumhjqwlu1" path="res://scenes/quests/story_quests/memories_castle/scripts/custom_enemies/archers/custom_throwing_enemy.gd" id="8_puf1s"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="9_5w78q"]
-[ext_resource type="SpriteFrames" uid="uid://b5jjvnmf4bjsa" path="res://scenes/quests/story_quests/memories_castle/memories_castle_player_components/memories_castle_bandido.tres" id="9_7tv1o"]
-[ext_resource type="Resource" uid="uid://dpv4wurvaamhb" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_collected.dialogue" id="10_4f2r0"]
+[ext_resource type="SpriteFrames" uid="uid://b5jjvnmf4bjsa" path="res://scenes/quests/story_quests/memories_castle/memories_castle_components/Player/memories_castle_bandido.tres" id="9_7tv1o"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="11_y0g08"]
-[ext_resource type="Resource" uid="uid://cggywn8t6s4le" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_stealth.dialogue" id="12_7ofig"]
-[ext_resource type="SpriteFrames" uid="uid://dkhj0kmowc7g6" path="res://scenes/quests/story_quests/memories_castle/memories_castle_player_components/memories_castle_arquero.tres" id="12_7tv1o"]
+[ext_resource type="SpriteFrames" uid="uid://dkhj0kmowc7g6" path="res://scenes/quests/story_quests/memories_castle/memories_castle_components/Player/memories_castle_arquero.tres" id="12_7tv1o"]
+[ext_resource type="SpriteFrames" uid="uid://o4hcvx26kr7e" path="res://scenes/quests/story_quests/memories_castle/1_memories_castle_stealth/memories_castle_stealth_components/arrows_frames.tres" id="13_1ur01"]
+[ext_resource type="Resource" uid="uid://dmb771f0qukf7" path="res://scenes/quests/story_quests/memories_castle/1_memories_castle_stealth/memories_castle_stealth_components/memories_castle_collected.dialogue" id="19_1ur01"]
+[ext_resource type="Resource" uid="uid://ca6nenob4hdit" path="res://scenes/quests/story_quests/memories_castle/1_memories_castle_stealth/memories_castle_stealth_components/memories_castle_stealth.dialogue" id="21_1ur01"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e8a6b"]
 radius = 51.0
@@ -1066,6 +1067,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy2" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(1962, 398)
@@ -1075,6 +1077,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy3" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(3288, 975)
@@ -1084,6 +1087,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy4" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(3569, 1049)
@@ -1093,6 +1097,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy5" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(3233, 241)
@@ -1102,6 +1107,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy6" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(3526, 248)
@@ -1111,6 +1117,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy7" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(3850, 290)
@@ -1120,6 +1127,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy8" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(3832, 1012)
@@ -1129,6 +1137,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy9" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(4224, 957)
@@ -1138,6 +1147,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy10" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(4285, 303)
@@ -1147,6 +1157,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy11" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(4658, 1079)
@@ -1156,6 +1167,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy12" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(4658, 284)
@@ -1165,6 +1177,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="Checkpoints" type="Node2D" parent="."]
 z_index = 1
@@ -1623,9 +1636,9 @@ texture_filter = 1
 position = Vector2(5561, 542)
 next_scene = "uid://b0vyvxapry7p0"
 item = SubResource("Resource_idy4y")
-collected_dialogue = ExtResource("10_4f2r0")
+collected_dialogue = ExtResource("19_1ur01")
 
 [node name="Cinematic" type="Node2D" parent="."]
 script = ExtResource("11_y0g08")
-dialogue = ExtResource("12_7ofig")
+dialogue = ExtResource("21_1ur01")
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"

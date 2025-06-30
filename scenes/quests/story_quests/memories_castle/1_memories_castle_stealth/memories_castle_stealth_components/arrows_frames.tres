@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://o4hcvx26kr7e"]
+
+[ext_resource type="Texture2D" uid="uid://cgcpgfiv720ly" path="res://scenes/quests/story_quests/memories_castle/1_memories_castle_stealth/memories_castle_stealth_components/arrow.png" id="1_yeh13"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lxbdb"]
+atlas = ExtResource("1_yeh13")
+region = Rect2(528, 198, 66, 66)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lxbdb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

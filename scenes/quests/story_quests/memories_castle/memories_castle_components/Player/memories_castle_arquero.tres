@@ -1,6 +1,6 @@
 [gd_resource type="SpriteFrames" load_steps=29 format=3 uid="uid://dkhj0kmowc7g6"]
 
-[ext_resource type="Texture2D" uid="uid://cfp7ic2va8oq5" path="res://scenes/quests/story_quests/memories_castle/memories_castle_player_components/Arquero.png" id="1_pvl6o"]
+[ext_resource type="Texture2D" uid="uid://cfp7ic2va8oq5" path="res://scenes/quests/story_quests/memories_castle/memories_castle_components/Player/Arquero.png" id="1_pvl6o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jnf28"]
 atlas = ExtResource("1_pvl6o")

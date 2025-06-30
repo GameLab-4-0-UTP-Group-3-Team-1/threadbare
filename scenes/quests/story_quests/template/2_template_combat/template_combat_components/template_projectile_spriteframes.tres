@@ -1,16 +1,16 @@
 [gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://b00dcfe4dtvkh"]
 
-[ext_resource type="Texture2D" uid="uid://cagyo41xspko" path="res://scenes/quests/story_quests/template/2_template_combat/template_combat_components/template_projectile.png" id="1_pusms"]
+[ext_resource type="Texture2D" uid="uid://cgcpgfiv720ly" path="res://scenes/quests/story_quests/memories_castle/1_memories_castle_stealth/memories_castle_stealth_components/arrow.png" id="1_a6pw8"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a6ony"]
-atlas = ExtResource("1_pusms")
-region = Rect2(0, 0, 64, 64)
+[sub_resource type="AtlasTexture" id="AtlasTexture_2sgco"]
+atlas = ExtResource("1_a6pw8")
+region = Rect2(396, 0, 66, 66)
 
 [resource]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_a6ony")
+"texture": SubResource("AtlasTexture_2sgco")
 }],
 "loop": true,
 "name": &"default",

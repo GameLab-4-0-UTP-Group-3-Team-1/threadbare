@@ -29,7 +29,7 @@ func _process(delta: float) -> void:
 		return
 
 	# Umbral en píxeles
-	const UMBRAL_COZY := 5550
+	const UMBRAL_COZY := 5520
 
 	# Cuando la posición X del jugador supera el umbral...
 	if player.global_position.x > UMBRAL_COZY:
