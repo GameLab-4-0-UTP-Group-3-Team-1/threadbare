@@ -18,9 +18,25 @@ func _ready() -> void:
 		guard.player_detected.connect(self._on_player_detected)
 	
 	if player:
-		player._set_mode(Player.Mode.FIGHTING)
+		player.mode = Player.Mode.FIGHTING
 		
 	get_tree().call_group("throwing_enemy", "start")
+	%CollectibleItem.revealed = true
+	
+func _process(delta: float) -> void:
+	# Asegúrate de que el jugador esté listo
+	if not player:
+		return
+
+	# Umbral en píxeles
+	const UMBRAL_COZY := 5520
+
+	# Cuando la posición X del jugador supera el umbral...
+	if player.global_position.x > UMBRAL_COZY:
+		player.mode = Player.Mode.COZY
+		# (Opcional) para volver a otro modo si regresa
+	elif player.global_position.x <= UMBRAL_COZY:
+		player.mode = Player.Mode.FIGHTING
 
 
 func _on_player_detected(player: Node2D) -> void:

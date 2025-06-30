@@ -14,7 +14,7 @@ var barrels_completed: int = 0
 func start() -> void:
 	var player: Player = get_tree().get_first_node_in_group("player")
 	if player:
-		player.mode = Player.Mode.FIGHTING
+		player.mode = Player.Mode.COZY
 	get_tree().call_group("throwing_enemy", "start")
 	for filling_barrel: FillingBarrel in get_tree().get_nodes_in_group("filling_barrels"):
 		filling_barrel.completed.connect(_on_barrel_completed)
@@ -29,6 +29,7 @@ func _ready() -> void:
 		DialogueManager.show_dialogue_balloon(intro_dialogue, "", [self, player])
 		await DialogueManager.dialogue_ended
 	start()
+	goal_reached.emit()
 
 
 func _update_allowed_colors() -> void:

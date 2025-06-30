@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnrdvotwhmx0v"]
+
+[ext_resource type="Script" uid="uid://cgwu1infdhqxt" path="res://scenes/eternal_loom_sokoban/components/system/board/piece_2d.gd" id="1_ki8j0"]
+[ext_resource type="Texture2D" uid="uid://bvgt0cdmqhsu" path="res://scenes/eternal_loom_sokoban/components/threads/thread_yellow.png" id="2_0xomy"]
+
+[node name="SokobanTargetImagination" type="Node2D"]
+z_index = 1
+script = ExtResource("1_ki8j0")
+id = &"target_imagination"
+metadata/_custom_type_script = "uid://cgwu1infdhqxt"
+
+[node name="Thread" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_0xomy")
+hframes = 3
+frame = 2
