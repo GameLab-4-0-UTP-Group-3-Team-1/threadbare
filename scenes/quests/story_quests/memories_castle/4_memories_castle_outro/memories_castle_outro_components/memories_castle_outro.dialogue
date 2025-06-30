@@ -1,7 +1,36 @@
-# SPDX-FileCopyrightText: The Threadbare Authors
-# SPDX-License-Identifier: MPL-2.0
-~ start
-You've made it to the closing scene!
-This is where you will tie up the loose ends of your story.
-Let's go back to Fray's End so you can return these threads to the Eternal Loom...
-=> END
+do animation_player.play(&"walk_on")
+do animation_player.animation_finished
+Voz misteriosa: Por fin, la verdad se desvela ante Armand: Mortimer sacrificó a un ancestro de Isabella...
+Voz misteriosa: Para robar la energía del linaje real y alcanzar la inmortalidad.
+Voz misteriosa: Ahora, con el medallón restaurado y la llave antigua, el caballero y la princesa se alzan contra la oscuridad.
+do get_node("../Characters/AnimatedCleric/AnimationCleric").play("walk_on")
+Mortimer: ¿Creías que tu memoria era fugaz, Armand?
+Mortimer: Fui yo quien borró tus recuerdos.
+Mortimer: Ahora, cuando complete el último sello...
+Mortimer: Tu amada se postrará ante mí para siempre.
+do get_node("../Characters/AnimatedPrincess/AnimationPrincess").play("cry")
+Isabella: ¡Armand, cuidado…!
+Isabella: Su poder es mayor al que imaginamos.
+do animation_player.play(&"guard")
+Armand: ¡Isabella, mantente firme!
+Armand: Mientras tengas fe en mí...
+Armand: Nuestros recuerdos retornarán...
+Armand: Y juntos derrotaremos tu oscuridad.
+do get_node("../Characters/AnimatedKing/AnimationKing").play("walk_on")
+do get_tree().create_timer(0.8).timeout
+#Timear los tiempos de ataque
+Rey: Mortimer, traidor.
+Rey: Pago tu traición con la fuerza del reino…
+Rey: ¡Que se rompan tus lazos con las sombras!
+do get_node("../Characters/AnimatedKing/AnimationKing").play("disappear")
+do animation_player.play(&"attack_01")
+do get_tree().create_timer(1).timeout
+do get_node("../Characters/AnimatedCleric/AnimationCleric").play("attack")
+do get_tree().create_timer(6).timeout
+do animation_player.play(&"attack_02")
+do get_node("../Characters/AnimatedCleric/AnimationCleric").play("dead")
+do get_node("../Characters/AnimatedPrincess/AnimationPrincess").play("walk_on")
+Isabella: Lo lograste...mis recuerdos vuelve...
+Isabella: Te amo con toda mi vida!
+Armand: Siempre estuve destinado a protegerte.
+Armand: Ahora, volvamos a casa...
