@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cnrdvotwhmx0v"]
 
 [ext_resource type="Script" uid="uid://cgwu1infdhqxt" path="res://scenes/eternal_loom_sokoban/components/system/board/piece_2d.gd" id="1_ki8j0"]
-[ext_resource type="Texture2D" uid="uid://bvgt0cdmqhsu" path="res://scenes/eternal_loom_sokoban/components/threads/thread_yellow.png" id="2_0xomy"]
+[ext_resource type="Texture2D" uid="uid://cabgng6serho8" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/memories_castle_combat_components/sokoban/tilesets/press_button.tres" id="2_yaeik"]
 
 [node name="SokobanTargetImagination" type="Node2D"]
 z_index = 1
@@ -10,7 +10,9 @@ id = &"target_imagination"
 metadata/_custom_type_script = "uid://cgwu1infdhqxt"
 
 [node name="Thread" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 0.392157, 1)
 texture_filter = 1
-texture = ExtResource("2_0xomy")
+scale = Vector2(4, 4)
+texture = ExtResource("2_yaeik")
 hframes = 3
-frame = 2
+frame = 1

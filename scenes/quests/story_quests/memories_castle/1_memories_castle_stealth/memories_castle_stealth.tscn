@@ -1621,7 +1621,7 @@ position = Vector2(107, 89)
 unique_name_in_owner = true
 texture_filter = 1
 position = Vector2(5561, 542)
-next_scene = "uid://cr2mr57m4ido8"
+next_scene = "uid://b0vyvxapry7p0"
 item = SubResource("Resource_idy4y")
 collected_dialogue = ExtResource("10_4f2r0")
 
