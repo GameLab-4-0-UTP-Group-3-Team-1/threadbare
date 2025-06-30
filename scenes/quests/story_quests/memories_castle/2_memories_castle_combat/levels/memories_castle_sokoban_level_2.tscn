@@ -9,7 +9,6 @@
 
 [node name="Cinematic" parent="." index="1"]
 dialogue = ExtResource("2_lj8ve")
-next_scene = "uid://ckiwpgs6vr4g3"
 
 [node name="Floor" parent="Board2D" index="0"]
 scale = Vector2(4, 4)

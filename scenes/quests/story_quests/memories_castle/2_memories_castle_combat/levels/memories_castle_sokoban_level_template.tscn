@@ -25,4 +25,4 @@ tile_map_data = PackedByteArray("AAD7//3/AAAAAAAABwD7//7/AAAAAAAABwD7////AAAAAAA
 tile_set = ExtResource("3_c1vyh")
 
 [node name="EternalLoomRuleset" parent="." index="5"]
-next_scene = "uid://d11k343fyo0xw"
+next_scene = ""
