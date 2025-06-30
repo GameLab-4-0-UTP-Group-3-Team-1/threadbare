@@ -4,7 +4,7 @@
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_043td"]
 [ext_resource type="PackedScene" uid="uid://q0rbdvlg3ei7" path="res://scenes/quests/story_quests/memories_castle/0_memories_castle_intro/memories_castle_intro_components/decorations/trees/forest_trees.tscn" id="2_il21j"]
 [ext_resource type="PackedScene" uid="uid://dwy4wn0j3swaf" path="res://scenes/quests/story_quests/memories_castle/scripts/custom_player/custom_player.tscn" id="3_fh2fd"]
-[ext_resource type="TileSet" uid="uid://b1gasslxqmvfa" path="res://scenes/quests/story_quests/memories_castle/memories_castle_tiles/memories_castle_tiles.tres" id="3_xvhmv"]
+[ext_resource type="TileSet" uid="uid://b1gasslxqmvfa" path="res://scenes/quests/story_quests/memories_castle/memories_castle_components/Tiles/memories_castle_tiles.tres" id="3_xvhmv"]
 [ext_resource type="PackedScene" uid="uid://d37mebu7atru7" path="res://scenes/game_elements/characters/enemies/guard/guard.tscn" id="4_o217b"]
 [ext_resource type="PackedScene" uid="uid://bcsqrcs37ykyx" path="res://scenes/quests/story_quests/memories_castle/0_memories_castle_intro/memories_castle_intro_components/decorations/trees/tree_high.tscn" id="4_xvhmv"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="5_d0ely"]
@@ -15,11 +15,11 @@
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="8_eanln"]
 [ext_resource type="Script" uid="uid://dctaumhjqwlu1" path="res://scenes/quests/story_quests/memories_castle/scripts/custom_enemies/archers/custom_throwing_enemy.gd" id="8_puf1s"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="9_5w78q"]
-[ext_resource type="SpriteFrames" uid="uid://b5jjvnmf4bjsa" path="res://scenes/quests/story_quests/memories_castle/memories_castle_player_components/memories_castle_bandido.tres" id="9_7tv1o"]
+[ext_resource type="SpriteFrames" uid="uid://b5jjvnmf4bjsa" path="res://scenes/quests/story_quests/memories_castle/memories_castle_components/Player/memories_castle_bandido.tres" id="9_7tv1o"]
 [ext_resource type="Resource" uid="uid://dpv4wurvaamhb" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_collected.dialogue" id="10_4f2r0"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="11_y0g08"]
 [ext_resource type="Resource" uid="uid://cggywn8t6s4le" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_stealth.dialogue" id="12_7ofig"]
-[ext_resource type="SpriteFrames" uid="uid://dkhj0kmowc7g6" path="res://scenes/quests/story_quests/memories_castle/memories_castle_player_components/memories_castle_arquero.tres" id="12_7tv1o"]
+[ext_resource type="SpriteFrames" uid="uid://dkhj0kmowc7g6" path="res://scenes/quests/story_quests/memories_castle/memories_castle_components/Player/memories_castle_arquero.tres" id="12_7tv1o"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e8a6b"]
 radius = 51.0
