@@ -1,10 +1,14 @@
-[gd_scene load_steps=4 format=4 uid="uid://b0vyvxapry7p0"]
+[gd_scene load_steps=5 format=4 uid="uid://b0vyvxapry7p0"]
 
 [ext_resource type="PackedScene" uid="uid://b805oktcsjrkk" path="res://scenes/eternal_loom_sokoban/levels/eternal_loom_template.tscn" id="1_lyt8b"]
 [ext_resource type="TileSet" uid="uid://05xr7sfmsp5w" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/memories_castle_combat_components/sokoban/tilesets/floor_1.tres" id="2_n6epe"]
+[ext_resource type="Resource" uid="uid://ctadkbdy710ah" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/ancient_runes_sokoban/sokoban1.dialogue" id="2_wm5jd"]
 [ext_resource type="TileSet" uid="uid://dwstsfryncb6g" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/ancient_runes_sokoban/components1/ancient_runes_tileset.tres" id="3_5imo5"]
 
 [node name="SokobanLevel1a" instance=ExtResource("1_lyt8b")]
+
+[node name="Cinematic" parent="." index="1"]
+dialogue = ExtResource("2_wm5jd")
 
 [node name="Floor" parent="Board2D" index="0"]
 scale = Vector2(4, 4)

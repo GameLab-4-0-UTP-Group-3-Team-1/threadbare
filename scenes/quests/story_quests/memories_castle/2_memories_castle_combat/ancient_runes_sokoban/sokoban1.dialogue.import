@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ctadkbdy710ah"
+path="res://.godot/imported/sokoban1.dialogue-9efecbac08992a14e9ac8998174141d0.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/ancient_runes_sokoban/sokoban1.dialogue"
+dest_files=["res://.godot/imported/sokoban1.dialogue-9efecbac08992a14e9ac8998174141d0.tres"]
+
+[params]
+
+defaults=true
