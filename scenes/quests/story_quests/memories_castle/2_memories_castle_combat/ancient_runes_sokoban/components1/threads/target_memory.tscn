@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://28uxevo1jxyo"]
+
+[ext_resource type="Script" uid="uid://cgwu1infdhqxt" path="res://scenes/eternal_loom_sokoban/components/system/board/piece_2d.gd" id="1_a07vp"]
+[ext_resource type="Texture2D" uid="uid://cabgng6serho8" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/memories_castle_combat_components/sokoban/tilesets/press_button.tres" id="2_4uu68"]
+
+[node name="SokobanTargetMemory" type="Node2D"]
+z_index = 1
+script = ExtResource("1_a07vp")
+id = &"target_memory"
+metadata/_custom_type_script = "uid://cgwu1infdhqxt"
+
+[node name="Thread" type="Sprite2D" parent="."]
+modulate = Color(0.392157, 1, 0.392157, 1)
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("2_4uu68")
+hframes = 3

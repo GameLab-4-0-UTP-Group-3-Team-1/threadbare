@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://c3v5vsga1sxfj"]
+
+[ext_resource type="Texture2D" uid="uid://cxyqisoodsgt3" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/memories_castle_combat_components/sokoban/floor_1.png" id="1_2xtrp"]
+
+[resource]
+atlas = ExtResource("1_2xtrp")
+region = Rect2(64, 160, 160, 32)
