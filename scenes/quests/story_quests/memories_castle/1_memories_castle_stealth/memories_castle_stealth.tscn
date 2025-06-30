@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://bu8e5ganibn37"]
+[gd_scene load_steps=27 format=4 uid="uid://bu8e5ganibn37"]
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_w4n6d"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_043td"]
@@ -20,6 +20,7 @@
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="11_y0g08"]
 [ext_resource type="Resource" uid="uid://cggywn8t6s4le" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_stealth.dialogue" id="12_7ofig"]
 [ext_resource type="SpriteFrames" uid="uid://dkhj0kmowc7g6" path="res://scenes/quests/story_quests/memories_castle/memories_castle_components/Player/memories_castle_arquero.tres" id="12_7tv1o"]
+[ext_resource type="SpriteFrames" uid="uid://o4hcvx26kr7e" path="res://scenes/quests/story_quests/memories_castle/1_memories_castle_stealth/memories_castle_stealth_components/arrows_frames.tres" id="13_1ur01"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e8a6b"]
 radius = 51.0
@@ -1066,6 +1067,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy2" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(1962, 398)
@@ -1075,6 +1077,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy3" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(3288, 975)
@@ -1084,6 +1087,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy4" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(3569, 1049)
@@ -1093,6 +1097,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy5" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(3233, 241)
@@ -1102,6 +1107,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy6" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(3526, 248)
@@ -1111,6 +1117,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy7" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(3850, 290)
@@ -1120,6 +1127,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy8" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(3832, 1012)
@@ -1129,6 +1137,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy9" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(4224, 957)
@@ -1138,6 +1147,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy10" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(4285, 303)
@@ -1147,6 +1157,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy11" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(4658, 1079)
@@ -1156,6 +1167,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="ThrowingEnemy12" parent="EnemyGuards" instance=ExtResource("7_fh2fd")]
 position = Vector2(4658, 284)
@@ -1165,6 +1177,7 @@ script = ExtResource("8_puf1s")
 sprite_frames = ExtResource("12_7tv1o")
 projectile_speed = 200.0
 projectile_duration = 2.0
+projectile_sprite_frames = ExtResource("13_1ur01")
 
 [node name="Checkpoints" type="Node2D" parent="."]
 z_index = 1
