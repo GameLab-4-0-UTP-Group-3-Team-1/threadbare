@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d371thplf3g6b"
-path="res://.godot/imported/BANDIDO.png-4c1155f4c53101266a55ae7fddb23095.ctex"
+uid="uid://cfp7ic2va8oq5"
+path="res://.godot/imported/Arquero.png-aaf032cdb7a0c19b0f7b74138a87ae3e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/memories_castle/memories_castle_components/Player/BANDIDO.png"
-dest_files=["res://.godot/imported/BANDIDO.png-4c1155f4c53101266a55ae7fddb23095.ctex"]
+source_file="res://scenes/quests/story_quests/memories_castle/memories_castle_components/Arquero/Arquero.png"
+dest_files=["res://.godot/imported/Arquero.png-aaf032cdb7a0c19b0f7b74138a87ae3e.ctex"]
 
 [params]
 

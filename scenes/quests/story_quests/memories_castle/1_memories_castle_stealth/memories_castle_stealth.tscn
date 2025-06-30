@@ -15,9 +15,9 @@
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="8_eanln"]
 [ext_resource type="Script" uid="uid://dctaumhjqwlu1" path="res://scenes/quests/story_quests/memories_castle/scripts/custom_enemies/archers/custom_throwing_enemy.gd" id="8_puf1s"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="9_5w78q"]
-[ext_resource type="SpriteFrames" uid="uid://b5jjvnmf4bjsa" path="res://scenes/quests/story_quests/memories_castle/memories_castle_components/Player/memories_castle_bandido.tres" id="9_7tv1o"]
+[ext_resource type="SpriteFrames" uid="uid://b5jjvnmf4bjsa" path="res://scenes/quests/story_quests/memories_castle/memories_castle_components/Bandido/memories_castle_bandido.tres" id="9_7tv1o"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="11_y0g08"]
-[ext_resource type="SpriteFrames" uid="uid://dkhj0kmowc7g6" path="res://scenes/quests/story_quests/memories_castle/memories_castle_components/Player/memories_castle_arquero.tres" id="12_7tv1o"]
+[ext_resource type="SpriteFrames" uid="uid://dkhj0kmowc7g6" path="res://scenes/quests/story_quests/memories_castle/memories_castle_components/Arquero/memories_castle_arquero.tres" id="12_7tv1o"]
 [ext_resource type="SpriteFrames" uid="uid://o4hcvx26kr7e" path="res://scenes/quests/story_quests/memories_castle/1_memories_castle_stealth/memories_castle_stealth_components/arrows_frames.tres" id="13_1ur01"]
 [ext_resource type="Resource" uid="uid://dmb771f0qukf7" path="res://scenes/quests/story_quests/memories_castle/1_memories_castle_stealth/memories_castle_stealth_components/memories_castle_collected.dialogue" id="19_1ur01"]
 [ext_resource type="Resource" uid="uid://ca6nenob4hdit" path="res://scenes/quests/story_quests/memories_castle/1_memories_castle_stealth/memories_castle_stealth_components/memories_castle_stealth.dialogue" id="21_1ur01"]
@@ -1634,7 +1634,7 @@ position = Vector2(107, 89)
 unique_name_in_owner = true
 texture_filter = 1
 position = Vector2(5561, 542)
-next_scene = "uid://cr2mr57m4ido8"
+next_scene = "uid://b0vyvxapry7p0"
 item = SubResource("Resource_idy4y")
 collected_dialogue = ExtResource("19_1ur01")
 

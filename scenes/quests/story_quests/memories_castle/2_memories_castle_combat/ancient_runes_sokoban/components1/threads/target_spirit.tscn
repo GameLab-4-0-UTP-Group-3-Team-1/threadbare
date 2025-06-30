@@ -10,6 +10,7 @@ id = &"target_spirit"
 metadata/_custom_type_script = "uid://cgwu1infdhqxt"
 
 [node name="Thread" type="Sprite2D" parent="."]
+modulate = Color(1, 0.392157, 0.392157, 1)
 texture_filter = 1
 scale = Vector2(4, 4)
 texture = ExtResource("2_05fw8")

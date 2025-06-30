@@ -41,7 +41,7 @@ position = Vector2(348, 335)
 [node name="CollectibleItem" parent="OnTheGround" instance=ExtResource("8_45xch")]
 unique_name_in_owner = true
 position = Vector2(868, 303)
-next_scene = "uid://b0vyvxapry7p0"
+next_scene = "uid://d11k343fyo0xw"
 item = SubResource("Resource_a51xm")
 collected_dialogue = ExtResource("2_6037x")
 dialogue_title = &"well_done"
