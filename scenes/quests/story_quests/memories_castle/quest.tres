@@ -4,10 +4,10 @@
 
 [resource]
 script = ExtResource("1_vist8")
-title = ""
-description = ""
+title = "Memories Castle"
+description = "Memories Castle sigue a un caballero, que se encuentra en un camino en dirección a un castillo, recuerda que se separó de la princesa antes de llegar, cree que puede estar dentro del castillo, no recuerda cómo llegó ahí, pero hará lo posible par encontrarla y entender que fue lo que pasó."
 authors = Array[String]([])
 affiliation = ""
-first_scene = "uid://c1gdct760l86h"
+first_scene = "uid://clbrdov4t64t6"
 animation_name = &""
 metadata/_custom_type_script = "uid://dts1hwdy3phin"

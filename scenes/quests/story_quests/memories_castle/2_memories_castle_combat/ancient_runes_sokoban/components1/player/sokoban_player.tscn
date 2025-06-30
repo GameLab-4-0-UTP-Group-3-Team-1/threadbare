@@ -1,0 +1,81 @@
+[gd_scene load_steps=12 format=3 uid="uid://bcheccw15n42j"]
+
+[ext_resource type="Script" uid="uid://cgwu1infdhqxt" path="res://scenes/eternal_loom_sokoban/components/system/board/piece_2d.gd" id="1_7bd27"]
+[ext_resource type="Texture2D" uid="uid://cqcoh4bvuy3v2" path="res://assets/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Idle.png" id="2_voa1i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p84lh"]
+atlas = ExtResource("2_voa1i")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrksl"]
+atlas = ExtResource("2_voa1i")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n25ky"]
+atlas = ExtResource("2_voa1i")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_awyxw"]
+atlas = ExtResource("2_voa1i")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vcda5"]
+atlas = ExtResource("2_voa1i")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xybv4"]
+atlas = ExtResource("2_voa1i")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vhsij"]
+atlas = ExtResource("2_voa1i")
+region = Rect2(1152, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_apbfm"]
+atlas = ExtResource("2_voa1i")
+region = Rect2(1344, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_siuvm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p84lh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrksl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n25ky")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_awyxw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vcda5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xybv4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vhsij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_apbfm")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 12.0
+}]
+
+[node name="SokobanPlayer" type="Node2D"]
+z_index = 2
+script = ExtResource("1_7bd27")
+id = &"player"
+tags = Array[StringName]([&"controllable"])
+metadata/_custom_type_script = "uid://cgwu1infdhqxt"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 1
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_siuvm")
+animation = &"idle"

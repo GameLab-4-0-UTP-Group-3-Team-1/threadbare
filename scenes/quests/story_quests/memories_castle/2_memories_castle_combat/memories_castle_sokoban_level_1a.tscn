@@ -1,5 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://1td1605qy7lg"]
+[gd_scene load_steps=4 format=4 uid="uid://b0vyvxapry7p0"]
 
 [ext_resource type="PackedScene" uid="uid://b805oktcsjrkk" path="res://scenes/eternal_loom_sokoban/levels/eternal_loom_template.tscn" id="1_kkt1h"]
+[ext_resource type="TileSet" uid="uid://dwstsfryncb6g" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/ancient_runes_sokoban/components1/ancient_runes_tileset.tres" id="2_05i4d"]
+[ext_resource type="TileSet" uid="uid://05xr7sfmsp5w" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/memories_castle_combat_components/sokoban/tilesets/floor_1.tres" id="2_crl1n"]
 
 [node name="SokobanLevel1a" instance=ExtResource("1_kkt1h")]
+
+[node name="Floor" parent="Board2D" index="0"]
+scale = Vector2(4, 4)
+tile_map_data = PackedByteArray("AAD8//7/AAAFAA0AAAD9//7/AAAFAA0AAAD+//7/AAAFAA0AAAD///7/AAAFAA0AAAAAAP7/AAAFAA0AAAABAP7/AAAFAA0AAAACAP7/AAAFAA0AAAADAP7/AAAFAA0AAAABAP//AAAFAA0AAAACAP//AAAFAA0AAAADAP//AAAFAA0AAAABAAAAAAAFAA0AAAACAAAAAAAFAA0AAAADAAAAAAAFAA0AAAD/////AAAFAA0AAAAAAP//AAAFAA0AAAD//wAAAAAFAA0AAAAAAAAAAAAFAA0AAAD9////AAAFAA0AAAD+////AAAFAA0AAAD9/wAAAAAFAA0AAAD+/wAAAAAFAA0AAAD8////AAAFAA0AAAD8/wAAAAAFAA0AAAA=")
+tile_set = ExtResource("2_crl1n")
+
+[node name="BackgroundThread" parent="Board2D" index="1"]
+tile_map_data = PackedByteArray()
+tile_set = ExtResource("2_05i4d")
+
+[node name="TargetThread" parent="Board2D" index="2"]
+tile_map_data = PackedByteArray("AAACAP//AAAAAAAADwA=")
+tile_set = ExtResource("2_05i4d")
+
+[node name="Foreground" parent="Board2D" index="3"]
+tile_map_data = PackedByteArray("AAD7//3/AAAAAAAABwD7//7/AAAAAAAABwD7////AAAAAAAABwD7/wAAAAAAAAAAAQD7/wEAAAAAAAAABwD8/wEAAAAAAAAABwD9/wEAAAAAAAAAAQD+/wEAAAAAAAAABwD//wEAAAAAAAAABwAAAAEAAAAAAAAAAQABAAEAAAAAAAAABwACAAEAAAAAAAAABwADAAEAAAAAAAAABwAEAAEAAAAAAAAABwAEAAAAAAAAAAAAAQAEAP//AAAAAAAABwAEAP7/AAAAAAAABwAEAP3/AAAAAAAABwADAP3/AAAAAAAABwACAP3/AAAAAAAAAQABAP3/AAAAAAAABwAAAP3/AAAAAAAABwD///3/AAAAAAAAAQD+//3/AAAAAAAABwD9//3/AAAAAAAABwD8//3/AAAAAAAAAQD/////AAAAAAAABgD9////AAAAAAAACAABAP//AAAAAAAACwA=")
+tile_set = ExtResource("2_05i4d")
+
+[node name="EternalLoomRuleset" parent="." index="5"]
+next_scene = "uid://d11k343fyo0xw"
