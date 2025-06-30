@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqficjeoajbvw"]
+
+[ext_resource type="Script" uid="uid://cgwu1infdhqxt" path="res://scenes/eternal_loom_sokoban/components/system/board/piece_2d.gd" id="1_vn1ra"]
+[ext_resource type="Texture2D" uid="uid://ci75iugs2rbak" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/memories_castle_combat_components/sokoban/pixel_button.png" id="2_frcxu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvv8o"]
+atlas = ExtResource("2_frcxu")
+region = Rect2(96, 192, 32, 32)
+
+[node name="SokobanClump" type="Node2D"]
+z_index = 2
+script = ExtResource("1_vn1ra")
+id = &"clump"
+tags = Array[StringName]([&"pushable"])
+metadata/_custom_type_script = "uid://cgwu1infdhqxt"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = SubResource("AtlasTexture_lvv8o")

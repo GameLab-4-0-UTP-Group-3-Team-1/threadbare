@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://bacb26hfawjqc"]
+
+[ext_resource type="Script" uid="uid://kx0dy58r7pt0" path="res://scenes/eternal_loom_sokoban/components/system/rules/rule_engine.gd" id="1_1a4ee"]
+[ext_resource type="Script" uid="uid://w1wfv7xac14u" path="res://scenes/eternal_loom_sokoban/components/system/input/directional_input.gd" id="2_1wovy"]
+[ext_resource type="Script" uid="uid://davuwhxg7pnmk" path="res://scenes/eternal_loom_sokoban/components/rules/rule_push.gd" id="3_m1nc6"]
+[ext_resource type="Script" uid="uid://6pqne81m5n80" path="res://scenes/eternal_loom_sokoban/components/goals/goal_all_on.gd" id="4_27fdm"]
+
+[node name="EternalLoomRuleset" type="Node" node_paths=PackedStringArray("directional_input")]
+script = ExtResource("1_1a4ee")
+directional_input = NodePath("DirectionalInput")
+tags_legend = Array[StringName]([&"controllable", &"pushable"])
+
+[node name="DirectionalInput" type="Node" parent="."]
+script = ExtResource("2_1wovy")
+metadata/_custom_type_script = "uid://w1wfv7xac14u"
+
+[node name="RulePushUp" type="Node" parent="."]
+script = ExtResource("3_m1nc6")
+pusher = &"controllable"
+pushee = &"pushable"
+
+[node name="RulePushRight" type="Node" parent="RulePushUp"]
+script = ExtResource("3_m1nc6")
+pusher = &"controllable"
+pushee = &"pushable"
+direction = 1
+
+[node name="RulePushDown" type="Node" parent="RulePushUp"]
+script = ExtResource("3_m1nc6")
+pusher = &"controllable"
+pushee = &"pushable"
+direction = 2
+
+[node name="RulePushLeft" type="Node" parent="RulePushUp"]
+script = ExtResource("3_m1nc6")
+pusher = &"controllable"
+pushee = &"pushable"
+direction = 3
+
+[node name="GoalImagination" type="Node" parent="."]
+script = ExtResource("4_27fdm")
+key = &"imagination"
+target = &"target_imagination"
+metadata/_custom_type_script = "uid://6pqne81m5n80"
+
+[node name="GoalMemory" type="Node" parent="."]
+script = ExtResource("4_27fdm")
+key = &"memory"
+target = &"target_memory"
+metadata/_custom_type_script = "uid://6pqne81m5n80"
+
+[node name="GoalSpirit" type="Node" parent="."]
+script = ExtResource("4_27fdm")
+key = &"spirit"
+target = &"target_spirit"
+metadata/_custom_type_script = "uid://6pqne81m5n80"

@@ -4,10 +4,10 @@
 
 [resource]
 script = ExtResource("1_vist8")
-title = ""
+title = "Memories Castle"
 description = ""
 authors = Array[String]([])
 affiliation = ""
-first_scene = "uid://c1gdct760l86h"
+first_scene = "uid://clbrdov4t64t6"
 animation_name = &""
 metadata/_custom_type_script = "uid://dts1hwdy3phin"
