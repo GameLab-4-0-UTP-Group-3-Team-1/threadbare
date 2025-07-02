@@ -17,7 +17,7 @@ theme_type_variation = &"PlayerRibbon"
 
 [node name="Label" type="Label" parent="PanelContainer"]
 layout_mode = 2
-text = "Sound Settings"
+text = "     Ajustes de Sonido     "
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 2
@@ -25,7 +25,7 @@ columns = 2
 
 [node name="MusicLabel" type="Label" parent="GridContainer"]
 layout_mode = 2
-text = "Music"
+text = "Musica"
 horizontal_alignment = 2
 
 [node name="MusicSlider" parent="GridContainer" instance=ExtResource("3_ntmw0")]
@@ -35,7 +35,7 @@ bus_name = "Music"
 
 [node name="SFXLabel" type="Label" parent="GridContainer"]
 layout_mode = 2
-text = "Sound Effects"
+text = "SFX"
 horizontal_alignment = 2
 
 [node name="SFXSlider" parent="GridContainer" instance=ExtResource("3_ntmw0")]
