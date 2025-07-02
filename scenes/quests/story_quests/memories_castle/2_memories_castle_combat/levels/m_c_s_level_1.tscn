@@ -1,14 +1,20 @@
-[gd_scene load_steps=5 format=4 uid="uid://b0vyvxapry7p0"]
+[gd_scene load_steps=8 format=4 uid="uid://b0vyvxapry7p0"]
 
 [ext_resource type="PackedScene" uid="uid://b805oktcsjrkk" path="res://scenes/eternal_loom_sokoban/levels/eternal_loom_template.tscn" id="1_j0xmo"]
 [ext_resource type="Resource" uid="uid://ctadkbdy710ah" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/ancient_runes_sokoban/sokoban1.dialogue" id="2_k35e1"]
 [ext_resource type="TileSet" uid="uid://05xr7sfmsp5w" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/memories_castle_combat_components/sokoban/tilesets/floor_1.tres" id="3_k7k6b"]
+[ext_resource type="Script" uid="uid://8uhqxrwbtc4o" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/levels/board_2d.gd" id="3_k35e1"]
 [ext_resource type="TileSet" uid="uid://dwstsfryncb6g" path="res://scenes/quests/story_quests/memories_castle/2_memories_castle_combat/ancient_runes_sokoban/components1/ancient_runes_tileset.tres" id="4_5t4lh"]
+[ext_resource type="Script" uid="uid://cb13cwctjcdm1" path="res://scenes/eternal_loom_sokoban/components/eternal_loom_ruleset.gd" id="6_5t4lh"]
+[ext_resource type="Script" uid="uid://cv0ckhcw8kucc" path="res://scenes/game_elements/props/background_music/background_music.gd" id="7_ja0ya"]
 
 [node name="SokobanLevel1a" instance=ExtResource("1_j0xmo")]
 
 [node name="Cinematic" parent="." index="1"]
 dialogue = ExtResource("2_k35e1")
+
+[node name="Board2D" parent="." index="3"]
+script = ExtResource("3_k35e1")
 
 [node name="Floor" parent="Board2D" index="0"]
 scale = Vector2(4, 4)
@@ -28,4 +34,9 @@ tile_map_data = PackedByteArray("AAD7//3/AAAAAAAABwD7//7/AAAAAAAABwD7/wAAAAAAAAA
 tile_set = ExtResource("4_5t4lh")
 
 [node name="EternalLoomRuleset" parent="." index="5"]
+script = ExtResource("6_5t4lh")
 next_scene = "uid://b2mqpx8m8htse"
+
+[node name="BackgroundMusic" parent="." index="6"]
+script = ExtResource("7_ja0ya")
+stream = null
