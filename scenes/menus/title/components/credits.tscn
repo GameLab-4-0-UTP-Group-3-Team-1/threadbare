@@ -50,27 +50,19 @@ theme_type_variation = &"PlayerRibbon"
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/Authors/VBoxContainer/TitlePanel"]
 layout_mode = 2
 mouse_filter = 1
-text = "Authors"
+text = "Autores"
 horizontal_alignment = 1
 
 [node name="Body" type="RichTextLabel" parent="MarginContainer/VBoxContainer/HBoxContainer/Authors/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 bbcode_enabled = true
-text = "Andrea Victoria Pavón
-Cassidy James Blaede
-Heather Drolet
-Joana Filizola
-Juan Manuel Fernandes dos Santos
-Justin Bourque
-Laura Foglia
-Manuel Quiñones
-Pablo de Haro
-Phoenix Stroh
-Rita Brederson
-Stephen Reid
-Tobías Romero
-Will Thompson"
+text = "Emanuel Rivera
+Alexander Castellares
+Bladimir Huanca
+Jhostin Baldeon
+Manuel Gordillo
+Alessandro Alvarez"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -93,7 +85,7 @@ theme_type_variation = &"NPCRibbon"
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/Art/VBoxContainer/TitlePanel"]
 layout_mode = 2
 mouse_filter = 1
-text = "Art and Music"
+text = "Arte y Musica"
 horizontal_alignment = 1
 
 [node name="Body" type="RichTextLabel" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/Art/VBoxContainer"]
@@ -137,7 +129,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 theme_type_variation = &"BigFlatButton"
-text = "< back"
+text = "< volver"
 flat = true
 
 [connection signal="meta_clicked" from="MarginContainer/VBoxContainer/HBoxContainer/Authors/VBoxContainer/Body" to="." method="_on_rich_text_label_meta_clicked"]
